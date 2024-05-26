@@ -1,4 +1,4 @@
-// components/Testimonials.js
+
 import Image from 'next/image'
 
 const testimonials = [
@@ -31,7 +31,7 @@ const Testimonials = () => {
             <br/><br/>
             <div className="flex items-center ">
               <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                <img src={testimonial.image} alt={testimonial.name} width={48} height={48} className="object-cover w-full h-full" />
+                <Image src={testimonial.image} alt={testimonial.name} width={48} height={48} className="object-cover w-full h-full" />
               </div>
               <div>
                 <p className="font-semibold">{testimonial.name}</p>
