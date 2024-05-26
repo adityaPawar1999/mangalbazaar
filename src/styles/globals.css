@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+/* styles/globals.css */
+
+/* styles/globals.css */
+
+  .custom-scrollbar {
+      scrollbar-width: thin;
+      scrollbar-color: #2d3e43 #e5e7eb;
+  }
+/* Custom scrollbar styles */
+.custom-scrollbar::-webkit-scrollbar {
+    height: 16px;
+    width: 30%;
+    scrollbar-width: thin;
+    background-color: red;
+    /* Adjust the height for horizontal scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #e2e8f0;
+    scrollbar-width: thin;
+    width: 30%;
+    /* Background of the scrollbar track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #4a5568;
+    /* Color of the scrollbar thumb */
+    scrollbar-width: thin;
+    border-radius: 10px;
+    width: 30%;
+    /* Rounded corners for the scrollbar thumb */
+    border: 4px solid #e2e8f0;
+    /* Adds space around the thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #2d3748;
+    width: 30%;
+    /* Darker thumb color on hover */
+}
+/* 
+////////////////////////////// */
+
+
+
+.slide img {
+    margin-left: 0 auto;
+    
+    object-fit: cover;
+}
+
+.slide {
+    padding-top: 2rem;
+    filter: brightness(10%);
+    transform: scale(.7);
+    transition: transform 300ms;
+    
+}
+.back{
+    position: relative;
+    filter: brightness(60%);
+    z-index: -10;
+}
+.activeSlide {
+    filter: brightness(100%);
+    padding-top: 3rem;
+    transform: scale(2);
+    
+}
+
+.arrow {
+    background-color: #fff;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    border: 2px solid rgb(255, 170, 0);
+    border-radius: 50%;
+    padding: .2rem;
+}
+.arrow:hover{
+    background-color:rgb(255, 170, 0) ;
+    font-color:white;
+}
+
+.arrow svg {
+    transition: color 300ms;
+}
+
+
+.next {
+    right: 45%;
+    bottom: -20%;
+}
+
+.prev {
+    left: 45%;
+    bottom: -20%;
+}
